@@ -30,3 +30,27 @@ The configuration details of each machine may be found below.
 | Web-1              | DVWA Container | 10.0.0.5   | Linux            |
 | Web-2              | DVWA Container | 10.0.0.6   | Linux            |
 | ELK-Server         | ELK Server     | 10.1.0.4   | Linux            |
+
+### Elk Configuration
+
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+- I was able to automate the setup and configuration, making it replicable across other networks and machines
+
+The playbook implements the following tasks:
+- Installs Docker.io
+- Installs Python and the Docker Python Module
+- Increases the ELK-server virtual memory and maintains it across reboots
+- Downloads and Installs the Docker ELK container
+
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+![Docker PS Output](Diagrams/docker_ps_output.png)
+
+### Target Machines & Beats
+This ELK server is configured to monitor the following machines:
+
+
+| Name  | IP Address |
+|-------|------------|
+| Web-1 | 10.0.0.5   |
+| Web-2 | 10.0.0.6   |
