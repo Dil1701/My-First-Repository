@@ -16,7 +16,9 @@ ELK Configuration
 Beats in Use
 Machines Being Monitored
 How to Use the Ansible Build
-Description of the Topology
+
+### Description of the Topology
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly stable, in addition to restricting access to the network.
@@ -31,6 +33,27 @@ The configuration details of each machine may be found below.
 | Web-1              | DVWA Container | 10.0.0.5   | Linux            |
 | Web-2              | DVWA Container | 10.0.0.6   | Linux            |
 | ELK-Server         | ELK Server     | 10.1.0.4   | Linux            |
+
+### Access Policies
+
+The machines on the internal network are not exposed to the public Internet. 
+
+Only the JumpBoxProvisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- My personal machine
+
+Machines within the network can only be accessed by Ansible on the JumpBoxProvisioner.
+- JumpBoxProvisioner 13.64.48.207
+
+A summary of the access policies in place can be found in the table below.
+
+| Name               | Publicly Accessable | Allowed IP Addresses |
+|--------------------|---------------------|----------------------|
+| JumpBoxProvisioner | Yes                 | My Host Machine      |
+| Web-1              | No                  | 168.62.197.156       |
+| Web-2              | No                  | 168.62.197.156       |
+| ELK-Server         | No                  |168.62.197.156        |
+
+
 
 ### Elk Configuration
 
