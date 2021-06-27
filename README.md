@@ -1,7 +1,8 @@
 # My-First-Repository
 Project from week 13 cybersecurity BC Elk Server
 
-![image](https://user-images.githubusercontent.com/86344327/123557782-be486f00-d747-11eb-95ad-f3fa02c82a30.png)
+![Azure_ELK_Stack_Diagram](https://user-images.githubusercontent.com/86344327/123558415-f8674000-d74a-11eb-90da-9535821c21c1.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible/Full_install.yml.txt file may be used to install only certain pieces of it, such as Filebeat.
 
