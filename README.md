@@ -43,6 +43,11 @@ The playbook implements the following tasks:
 - Increases the ELK-server virtual memory and maintains it across reboots
 - Downloads and Installs the Docker ELK container
 
+The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
+
+![ansible](https://user-images.githubusercontent.com/86344327/123558503-70ce0100-d74b-11eb-8c49-f728399c6069.PNG)
+
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
