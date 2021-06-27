@@ -42,10 +42,6 @@ The playbook implements the following tasks:
 - Increases the ELK-server virtual memory and maintains it across reboots
 - Downloads and Installs the Docker ELK container
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-![Docker PS Output](Diagrams/docker_ps_output.png)
-
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
@@ -54,3 +50,20 @@ This ELK server is configured to monitor the following machines:
 |-------|------------|
 | Web-1 | 10.0.0.5   |
 | Web-2 | 10.0.0.6   |
+
+
+We have installed the following Beats on these machines:
+- FileBeat
+- MetricBeat
+
+These Beats allow us to collect the following information from each machine:
+- FileBeat tracks changes in system logs, including things such as login attempts and commands run as sudo
+- MetricBeat tracks system metrics, such as CPU and memory usage.
+
+### Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+SSH into the control node and follow the steps below:
+- Copy the install-elk.yml file to /etc/ansible#.
+- Update the hosts file to create an ELK group and include the private IP address of your ELK server 
+- Run the playbook, and navigate to Kibana at http://173.168.--:5601/app/kibana#/home to check that the installation worked as expected.
