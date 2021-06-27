@@ -42,7 +42,7 @@ Only the JumpBoxProvisioner machine can accept connections from the Internet. Ac
 - My personal machine
 
 Machines within the network can only be accessed by Ansible on the JumpBoxProvisioner.
-- JumpBoxProvisioner 13.64.48.207
+- JumpBoxProvisioner 
 
 A summary of the access policies in place can be found in the table below.
 
